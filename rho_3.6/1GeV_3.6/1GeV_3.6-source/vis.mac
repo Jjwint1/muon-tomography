@@ -1,0 +1,18 @@
+/vis/open OGL 600x600-0+0
+
+/vis/drawVolume
+
+/vis/viewer/set/viewpointThetaPhi 120. 45.
+
+/vis/scene/add/axes 0 0 0 1 m
+
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+
+/vis/viewer/set/autoRefresh true
+
+/vis/scene/endOfEventAction accumulate
+
+
